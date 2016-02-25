@@ -1,0 +1,6 @@
+
+script-nodejs-quickstart.json
+client_secret.json
+node_modules/
+.vscode/
+typings/
