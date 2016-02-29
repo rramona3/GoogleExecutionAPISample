@@ -3,10 +3,11 @@ var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
 
-//NOTE: 1) access scope for app script itself.
-//it not depends from enabled Drive API in the project console or not - this scope should be 
-//specified in any case.   
-//in the project console only "Google Apps Script Execution API" should be enabled.
+//NOTE: 
+//1) this is access scope for app script itself - it depends from what script is doing.
+//in the project console only "Google Apps Script Execution API" should be enabled - 
+//If you enable Drive API in the project console - it doesn't matter - scopes should be specified here in any case.   
+
 // 2) If modifying these scopes, delete your previously saved credentials
 // at script-nodejs-quickstart.json
 var SCOPES = ['https://www.googleapis.com/auth/drive'];
